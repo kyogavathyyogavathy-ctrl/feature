@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Anton', sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-retro-lavender: #D0C7FE;
+  --color-retro-pink: #FECCD3;
+  --color-retro-light-lavender: #E6E0FF;
+  --color-retro-light-pink: #F7B9C5;
+  --color-retro-cyan: #45C5E2;
+  --color-retro-yellow: #FFE500;
+  --color-retro-black: #000000;
+  --color-retro-white: #FFFFFF;
+}
+
+/* Custom retro graphic utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.retro-shadow-sm {
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.retro-shadow {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.retro-shadow-lg {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.retro-shadow-xl {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.retro-text-shadow {
+  text-shadow: 3px 3px 0px #000000;
+}
+
+.retro-display-stroke {
+  -webkit-text-stroke: 2px #000000;
+  text-shadow: 4px 4px 0px #000000;
+}
+
+@media (min-width: 768px) {
+  .retro-display-stroke {
+    -webkit-text-stroke: 3px #000000;
+    text-shadow: 6px 6px 0px #000000;
+  }
+}
+
+/* Dot pattern background */
+.bg-retro-dots {
+  background-image: radial-gradient(#000000 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+}
+
+.bg-retro-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+}

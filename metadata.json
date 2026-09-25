@@ -1,0 +1,6 @@
+{
+  "name": "AURA - 90s Retro IoT Smart Home Automation",
+  "description": "An IoT-based smart home automation system combining 90s retro graphic design with ESP32 microcontrollers, live sensor monitoring, dynamic automation rules, and tactile device controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
