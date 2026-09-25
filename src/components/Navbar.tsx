@@ -95,7 +95,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
           <button
             onClick={onOpenGetStarted}
-            className="px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white bg-black hover:bg-black/90 border-2 border-black retro-shadow-sm flex items-center gap-1 transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            className="px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-black bg-[#27C93F] hover:bg-[#22b837] border-2 border-black retro-shadow-sm flex items-center gap-1 transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
           >
             <span>GET STARTED</span>
             <ArrowUpRight size={13} strokeWidth={2.5} />
@@ -148,7 +148,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenGetStarted();
               }}
-              className="flex-1 py-2 text-xs font-bold uppercase border-2 border-black bg-black text-white text-center"
+              className="flex-1 py-2 text-xs font-bold uppercase border-2 border-black bg-[#27C93F] hover:bg-[#22b837] text-black text-center"
             >
               GET STARTED
             </button>

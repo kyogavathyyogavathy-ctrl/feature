@@ -91,7 +91,11 @@ export const SignInModal: React.FC<SignInModalProps> = ({
             </button>
             <button
               type="submit"
-              className="px-6 py-2.5 text-xs font-display tracking-wider uppercase border-2 border-black bg-black text-white hover:bg-black/90 retro-shadow-sm flex items-center gap-1.5"
+              className={`px-6 py-2.5 text-xs font-display tracking-wider uppercase border-2 border-black ${
+                mode === 'getstarted'
+                  ? 'bg-[#27C93F] hover:bg-[#22b837] text-black'
+                  : 'bg-black text-white hover:bg-black/90'
+              } retro-shadow-sm flex items-center gap-1.5`}
             >
               <span>{mode === 'signin' ? 'ENTER DASHBOARD' : 'START MONITORING'}</span>
               <ArrowRight size={14} />
